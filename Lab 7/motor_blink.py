@@ -1,4 +1,5 @@
-#basic "blink" program, modified to control a 3V DC motor on pin D13 of Adafruit nRF52840 Feather Sense board
+# basic "blink" program, modified to control a 3V DC motor on pin D13 of Adafruit nRF52840 Feather Sense board
+# video of code running can be found here https://www.youtube.com/watch?v=dFxukxS_Sjk
 
 import board
 import digitalio
