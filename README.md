@@ -1,3 +1,3 @@
-# ME106 Assignments
+# Course Assignments
 
-CircuitPython programs made in ME106 at San Jose State University in Spring 2021. 
+Various programs made for college course assignments. 
