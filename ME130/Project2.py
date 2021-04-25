@@ -13,18 +13,23 @@ x0 = float(input("Input initial location in m:"))
 v0 = float(input("Input initial speed in m/s:"))
 tstop = int(input("Input time range for plot in s:"))
 
+#defines t value range for calculation/plotting
 t = np.linspace(0, tstop, 200)
 
+#initial conditions
 init = [x0,v0]
 
-w = np.sqrt(k/m)
+#natural frequency
+w = np.sqrt(k/m) 
 
+#turns second order ode for system into two first order odes to be solved by odeint
 def f(i, t):
     return (i[1], (F0*np.sin(w0*t)-B*i[1]-k*i[0])/m)
 
-x = odeint(f,init,t)
+#solves ODE
+x = odeint(f,init,t)  
 
-loc = x[:,0]
+loc = x[:,0] 
 vel = x[:,1]
 
 #plotting/formatting
