@@ -4,12 +4,12 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 #user inputs
-m = float(input("Input mass value in kg:"))
-k = float(input("Input spring constant in N/m:"))
-B = float(input("Input damping coefficient in kg/s:"))
-F0 = float(input("Input amplitude of force function in N:"))
-w0 = float(input("Input frequency of force function in rad/s:"))
-x0 = float(input("Input initial location in m:"))
+m = float(input("Input mass value (m) in kg:"))
+k = float(input("Input spring constant (k) in N/m:"))
+B = float(input("Input damping coefficient (B) in kg/s:"))
+F0 = float(input("Input amplitude of force function (F0) in N:"))
+w0 = float(input("Input frequency of force function (w0) in rad/s:"))
+x0 = float(input("Input initial position in m:"))
 v0 = float(input("Input initial speed in m/s:"))
 tstop = int(input("Input time range for plot in s:"))
 
@@ -22,15 +22,15 @@ init = [x0,v0]
 #natural frequency
 w = np.sqrt(k/m) 
 
-#turns second order ode for system into two first order odes to be solved by odeint
+#turns second order ode into first order ode system to be solved by odeint
 def f(i, t):
     return (i[1], (F0*np.sin(w0*t)-B*i[1]-k*i[0])/m)
 
 #solves ODE
 x = odeint(f,init,t)  
 
-loc = x[:,0] 
-vel = x[:,1]
+loc = x[:,1] 
+vel = x[:,0]
 
 #plotting/formatting
 plt.plot(t,loc)
