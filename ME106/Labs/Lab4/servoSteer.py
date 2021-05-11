@@ -1,5 +1,8 @@
-# steers servo attached to nRF52840 Feather Sense on EduShields Tripler Baseboard with Interact Wing using potentiometer 
-# video here: https://www.youtube.com/watch?v=MNnB3ojfUGk
+''' 
+Steers a servo attached to nRF52840 Feather Sense on EduShields Tripler Baseboard with Interact Wing using potentiometer. 
+Written by Beverly Wilt (beverly.wilt@sjsu.edu) 
+Functionality video here: https://www.youtube.com/watch?v=MNnB3ojfUGk 
+'''
 
 import board
 import pulseio
