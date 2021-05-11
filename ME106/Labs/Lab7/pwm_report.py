@@ -1,7 +1,11 @@
-# increases duty cycle from 0% to 100% in steps of 10% every three seconds
-# allows the motor to come up to speed for the first of these three seconds
-# reports the change in encoder counts over the last two seconds
-# prints duty cycle value (0-100) and the change in encoder counts for each speed 
+'''
+Increases duty cycle from 0% to 100% in steps of 10% every three seconds,
+allows the motor to come up to speed for the first of these three seconds,
+reports the change in encoder counts over the last two seconds,
+and prints duty cycle value (0-100) and the change in encoder counts for each speed.
+
+Written by Beverly Wilt (beverly.wilt@sjsu.edu)
+'''
 
 import board, pulseio, rotaryio, time
 
