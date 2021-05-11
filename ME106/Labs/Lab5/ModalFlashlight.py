@@ -1,5 +1,9 @@
-# Modal Flashlight using nRF52840 Feather Sense on Edushields Tripler Baseboard with Interact Wing
-# Modes: Off, Dim, On, Fast Blink
+''' 
+Modal Flashlight using nRF52840 Feather Sense on Edushields Tripler Baseboard with Interact Wing
+Modes: Off, Dim, On, Fast Blink
+Based on code provided by Eric Wertz (eric@edushields.com)
+Written by Beverly Wilt (beverly.wilt@sjsu.edu) 
+'''
 
 import board, digitalio, pulseio, time
 
