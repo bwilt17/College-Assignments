@@ -1,5 +1,8 @@
-# uses the accelerometer of nRF52480 Sense for motor speed control input
-# video of program running found here: https://www.youtube.com/watch?v=oNNodXaHofY
+'''
+Uses the accelerometer of nRF52480 Sense for motor speed control input.
+A video of the program running can be found here: https://www.youtube.com/watch?v=oNNodXaHofY
+Written by Beverly Wilt (beverly.wilt@sjsu.edu) 
+'''
 
 import board, time, pulseio, rotaryio
 import adafruit_lsm6ds.lsm6ds33
