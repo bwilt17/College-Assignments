@@ -1,4 +1,8 @@
-# uses both adafruit connect app and rotary encoder to vary brightness of external LED connected to nRF52840 Feather Sense on EduShields Tripler Baseboard with Interact Wing
+'''
+Uses both adafruit connect app and rotary encoder to vary brightness of external LED connected to nRF52840 Feather Sense on EduShields Tripler Baseboard with Interact Wing
+Based on code provided by Adafruit for BLE control
+Written by Beverly Wilt (beverly.wilt@sjsu.edu) 
+'''
 
 from adafruit_ble import BLERadio
 from adafruit_ble.advertising.standard import ProvideServicesAdvertisement
