@@ -1,3 +1,6 @@
+''' Simulation of Mass-Spring System with user inputs and plot output. Made for course project at SJSU in SP21. '''
+''' Written by Beverly Wilt (beverly.wilt@sjsu.edu) '''
+
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib
