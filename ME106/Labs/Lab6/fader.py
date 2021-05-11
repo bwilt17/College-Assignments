@@ -1,10 +1,13 @@
-# fades externally connected LED from off to on in 10% increments using the range function
+'''
+Fades an externally connected LED to D13 of nRF52840 feather sense from off to on in 10% increments using the range function.
+Written by Beverly Wilt (beverly.wilt@sjsu.edu) 
+'''
 
 import board
 import pulseio
 import time
 
-PIN_LEDPWM = board.D12
+PIN_LEDPWM = board.D13
 
 led = pulseio.PWMOut(PIN_LEDPWM)
 
