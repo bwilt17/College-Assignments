@@ -1,6 +1,9 @@
-# Produces following behavior from nRF52840 Feather Sense board on Edushields Tripler Baseboard with Interact Wing:
-#   varies brightness of external LED so that by turning rotary encoder one direction, the brightness of LED increments from 0% to 100% brightness 
-#   and then will dim it in the same increments when turning the encoder in the other direction back down to 0%
+'''
+Produces following behavior from nRF52840 Feather Sense board on Edushields Tripler Baseboard with Interact Wing:
+    - varies brightness of external LED so that by turning rotary encoder one direction, the brightness of LED increments from 0% to 100% brightness 
+    - dims LED in the same increments when turning the encoder in the other direction back down to 0%
+Written by Beverly Wilt (beverly.wilt@sjsu.edu) 
+'''
 
 import board, pulseio, rotaryio
 
