@@ -1,4 +1,7 @@
-# prints time_monotonic() value as time elapsed since start and the current encoder count every 3s for 30s
+'''
+Prints time_monotonic() value as time elapsed since start and the current encoder count every 3s for 30s.
+Written by Beverly Wilt (beverly.wilt@sjsu.edu)
+'''
 
 import board, digitalio, rotaryio, time
 
